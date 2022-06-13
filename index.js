@@ -20,3 +20,20 @@ console.log(result);
 
 //reduce//
 var total = [1, 2, 3, 4].reduce(function(a, b){ return a + b; });
+
+//findlndex//
+
+function isPrime(element, index, array) {
+    var start = 2;
+    while (start <= Math.sqrt(element)) {
+      if (element % start < 1) {
+        return false;
+      } else {
+        start++;
+      }
+    }
+    return element > 1;
+  }
+  
+  console.log([4, 6, 8, 12].findIndex(isPrime)); // -1, no encontrado
+  console.log([4, 6, 7, 12].findIndex(isPrime)); // 2
