@@ -37,3 +37,5 @@ function isPrime(element, index, array) {
   
   console.log([4, 6, 8, 12].findIndex(isPrime)); // -1, no encontrado
   console.log([4, 6, 7, 12].findIndex(isPrime)); // 2
+
+  
