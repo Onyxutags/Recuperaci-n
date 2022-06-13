@@ -9,3 +9,76 @@ var numbers = [2, 4, 6];
 var roots = numbers.map(function(num) {
     return Math.sqrt(num);
 });
+
+//finter//
+const words = ['rana', 'camaleon', 'mosquito', 'hormiga', 'mosco', 'escarabajo'];
+
+const result = words.filter(word => word.length > 6);
+
+console.log(result);
+
+
+//reduce//
+var total = [1, 2, 3, 4].reduce(function(a, b){ return a + b; });
+
+//findlndex//
+
+function isPrime(element, index, array) {
+    var start = 2;
+    while (start <= Math.sqrt(element)) {
+      if (element % start < 1) {
+        return false;
+      } else {
+        start++;
+      }
+    }
+    return element > 1;
+  }
+  
+  console.log([4, 6, 8, 12].findIndex(isPrime)); // -1, no encontrado
+  console.log([4, 6, 7, 12].findIndex(isPrime)); // 2
+
+  //replace//
+
+  var re = /borregos/gi;
+var str = "Apples are round, and apples are juicy.";
+var newstr = str.replace(re, "oranges");
+console.log(newstr);
+
+//hoisting//
+
+let myArray = ['rana', 'camaleon', 'mosquito', 'hormiga', 'mosco', 'escarabajo'];
+
+
+
+//ejemplos de promesa//
+
+const getUsers = async() => {
+
+    return new Promise((resolve, reject) => {
+
+        setTimeout(() => {
+
+            resolve([{
+
+                    id: 1,
+
+                    name: "Onyxs",
+
+                },
+
+                {
+
+                    id: 2,
+
+                    name: "´hormiga",
+
+                },
+
+            ]);
+
+        }, 3000);
+
+    });
+
+};
