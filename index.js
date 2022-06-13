@@ -16,3 +16,7 @@ const words = ['rana', 'camaleon', 'mosquito', 'hormiga', 'mosco', 'escarabajo']
 const result = words.filter(word => word.length > 6);
 
 console.log(result);
+
+
+//reduce//
+var total = [1, 2, 3, 4].reduce(function(a, b){ return a + b; });
