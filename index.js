@@ -48,3 +48,37 @@ console.log(newstr);
 //hoisting//
 
 let myArray = ['rana', 'camaleon', 'mosquito', 'hormiga', 'mosco', 'escarabajo'];
+
+
+
+//ejemplos de promesa//
+
+const getUsers = async() => {
+
+    return new Promise((resolve, reject) => {
+
+        setTimeout(() => {
+
+            resolve([{
+
+                    id: 1,
+
+                    name: "Onyxs",
+
+                },
+
+                {
+
+                    id: 2,
+
+                    name: "´hormiga",
+
+                },
+
+            ]);
+
+        }, 3000);
+
+    });
+
+};
